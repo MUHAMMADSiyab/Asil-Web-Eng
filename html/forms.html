@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Forms</title>
+  </head>
+
+  <body>
+    <form action="" method="GET">
+      <label for="username">Username</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="Enter username"
+      />
+
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Enter password"
+        readonly
+      />
+
+      <br /><br />
+
+      <input type="checkbox" name="cricket" id="cricket" value="cricket" />
+      <label for="cricket">Cricket</label>
+
+      <input type="checkbox" name="hockey" id="hockey" value="hockey" />
+      <label for="hockey">Hockey</label>
+
+      <input type="checkbox" name="baseball" id="baseball" value="baseball" />
+      <label for="baseball">Baseball</label>
+
+      <br /><br />
+
+      <input type="radio" name="gender" id="male" value="male" checked />
+      <label for="male">Male</label>
+
+      <input type="radio" name="gender" id="female" value="female" />
+      <label for="female">Female</label>
+
+      <input type="radio" name="gender" id="other" value="other" />
+      <label for="other">Other</label>
+
+      <br /><br />
+
+      <select name="country" id="country" size="1">
+        <option value="">Select Country</option>
+        <option value="Pakistan">Pakistan</option>
+        <option value="India">India</option>
+        <option value="Bangladesh" selected>Bangladesh</option>
+        <option value="Nepal">Nepal</option>
+      </select>
+
+      <br /><br />
+
+      <textarea
+        name="comment"
+        id="comment"
+        cols="40"
+        rows="10"
+        placeholder="Enter your message"
+      ></textarea>
+
+      <br /><br />
+
+      <input type="button" value="Click me" disabled hidden />
+      <input type="submit" value="Submit form" />
+    </form>
+  </body>
+</html>
