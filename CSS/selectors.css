@@ -1,0 +1,46 @@
+/* Class & ID */
+.heading {
+  font-family: sans-serif;
+  color: purple;
+  font-size: 4rem;
+}
+
+#heading {
+  font-family: sans-serif;
+  color: rgb(240, 0, 0);
+  font-size: 2rem;
+}
+
+/* All */
+* {
+  background: pink;
+}
+
+/* Multiple */
+h1,
+p,
+h3 {
+  text-align: center;
+}
+
+/* DECS Selectors */
+
+/* Direct children */
+.container > a {
+  color: orange;
+}
+
+/* All children */
+.container a {
+  color: purple;
+}
+
+/* Direct sibling */
+h2 + h3 {
+  color: rgb(85, 226, 4);
+}
+
+/* All sibligs */
+h2 ~ h3 {
+  color: rgb(3, 72, 223);
+}
