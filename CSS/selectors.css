@@ -44,3 +44,77 @@ h2 + h3 {
 h2 ~ h3 {
   color: rgb(3, 72, 223);
 }
+
+/* 
+  PSUEDO Selectors/Class
+*/
+.btn {
+  width: 200px;
+  height: 45px;
+  background: orangered;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 1rem;
+  border: none;
+}
+.btn:hover {
+  background-color: darkred;
+  font-size: 1.5rem;
+}
+
+.btn:focus {
+  background-color: rgb(27, 27, 27);
+}
+
+.inp {
+  outline: none;
+}
+
+.inp:focus {
+  /* width: 400px;
+  height: 80px; */
+}
+
+a:not(.ignoreme) {
+  text-decoration: none;
+  font-size: 2rem;
+  color: orangered !important;
+}
+
+.ch:checked + label {
+  color: orangered;
+  font-size: x-large;
+  font-family: sans-serif;
+}
+
+.inp:invalid {
+  border-color: red;
+}
+
+.inp:valid {
+  border-color: green;
+}
+
+.container::after {
+  content: "Something here";
+  width: 200px;
+  background: #000;
+  color: #fff;
+}
+
+.container::before {
+  content: "Something here";
+  width: 200px;
+  background: #000;
+  color: #fff;
+}
+
+p::selection {
+  background: #000;
+  color: #fff;
+}
+
+.inp::placeholder {
+  color: blue;
+  font-size: 1rem;
+}
