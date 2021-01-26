@@ -17,6 +17,22 @@ body {
   border-radius: 5px;
   background: #fff;
   box-shadow: 1px 3px 15px rgb(231, 231, 231);
+  position: relative;
+}
+
+.top-icon {
+  width: 100px;
+  height: 100px;
+  background: url(./Illustration/usericon.png) no-repeat center / cover;
+  margin: 0 auto;
+  position: absolute;
+  top: -30px;
+  left: 0;
+  right: 0;
+  border-radius: 100%;
+  border: 10px solid rgb(255, 255, 255);
+  /* border-top-color: orangered;
+  border-bottom-color: orangered; */
 }
 
 .container header .title {
@@ -60,6 +76,11 @@ body {
 
 .container .form-group .form-control:focus {
   border: 2px solid orangered;
+}
+
+.container .form-group .form-control:focus::placeholder {
+  transition: all 0.3s ease-in;
+  opacity: 0;
 }
 
 .container #signup-btn {

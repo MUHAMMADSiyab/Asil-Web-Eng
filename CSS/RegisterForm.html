@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="RegisterForm.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="Left">
+      <header>
+        <h1><sup>New Customer</sup></h1>
+        <h5>
+          For a fast checkout, easy access to previous order, and the ability to
+          create an address book and store settings. Reigster below.
+        </h5>
+      </header>
+
+      <main>
+        <form class="group-ctrls">
+          <div class="form-group">
+            <label for="title" class="control-Title">Title</label>
+            <select name="title" id="title" size="1" class="Form-Control">
+              <option value="">Please, select</option>
+              <option value="Mr">Mr</option>
+              <option value="Mis">Mis</option>
+              <option value="Mrs">Mrs</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="FirstName" class="control-Title">First Name</label>
+            <input
+              type="text"
+              name="FirstName"
+              id="FirstName"
+              class="Form-Control"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="LastName" class="control-Title">Last Name</label>
+            <input
+              type="text"
+              name="LastName"
+              id="LastName"
+              class="Form-Control"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="control-Title">email address</label>
+            <input type="email" name="email" id="email" class="Form-Control" />
+          </div>
+
+          <div class="form-group">
+            <label for="password" class="control-Title">password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="Form-Control"
+            />
+            <p>Minimum 6 Chracters</p>
+          </div>
+
+          <div class="form-group">
+            <label for="confrimPwd" class="control-Title"
+              >confirm password</label
+            >
+            <input
+              type="password"
+              name="confrimPwd"
+              id="confrimPwd"
+              class="Form-Control"
+            />
+          </div>
+
+          <div class="form-group" style="margin-top: 10px; margin-bottom: 30px">
+            <input type="checkbox" name="YesSignMe" id="YesSignMe" checked />
+            <label for="YesSignMe" class="control-Title"
+              >yes, sign me up to hear about gigs, competition and sales pivacy
+              policy</label
+            >
+            <br /><br />
+            <input type="checkbox" name="AcceptTerms" id="AcceptTerms" />
+            <label for="AcceptTerms" class="control-Title"
+              >please accept our terms & privacy policy</label
+            >
+          </div>
+
+          <div class="form-group">
+            <input
+              type="submit"
+              name="submit"
+              id="mainBtn"
+              value="Register"
+              class="control-Title"
+            />
+          </div>
+        </form>
+      </main>
+    </section>
+  </body>
+</html>
